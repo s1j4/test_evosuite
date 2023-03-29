@@ -1,0 +1,3 @@
+configuration_name,user_configuration
+DEFAULT,
+"CMX,-generateSuite;-Dcrossover_function=COMPLETELYMAPPEDCROSSOVER"
