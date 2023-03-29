@@ -53,14 +53,13 @@ for /l %%i in (1,1,%rounds%) do (
                 )
             )
             
-            rem Waits untill running instances are less than max_instances
+            rem Waits until running instances are less than max_instances
             echo Waiting to run class !class_name! with configuration !config_name!...
             call :try_again
 
 
             rem Executes the test generation for this class & configuration
-
-            echo Running class !class_name! with configuration !config_name! in background.
+            echo Running class !class_name! with configuration !config_name! for round !round!.
             echo ---------------------------------------------------------------------------------
 
             start "EvosuiteTestGeneration" java ^
